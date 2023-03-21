@@ -4,6 +4,7 @@ import Produs from "./pages/Produs";
 import Produse from "./pages/Produse";
 import Wishlist from "./pages/Wishlist";
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 				<Route path='*' element={<h1>PAGE NOT FOUND</h1>} />
 			</Routes>
 			{/* FOOTER nu merge ca si componenta comuna, am incercat */}
+			<Footer />
 		</div>
 	);
 }
