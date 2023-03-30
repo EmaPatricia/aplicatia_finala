@@ -9,7 +9,9 @@ function Navigation() {
 					<Link to='/home'>Home</Link>
 					<Link to='/produse'>Produse</Link>
 				</div>
-				<h1>Outstock &trade;</h1>
+				<div className='logo'>
+					<h1>Outstock &trade;</h1>
+				</div>
 				<div className='right_link'>
 					<Link to='/wishlist'>Wishlist</Link>
 				</div>

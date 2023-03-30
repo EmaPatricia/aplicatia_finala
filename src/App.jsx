@@ -1,23 +1,28 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
-import Produs from "./pages/Produs";
-import Produse from "./pages/Produse";
 import Wishlist from "./pages/Wishlist";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import "./App.style.css";
+import Products from "./pages/Products";
 
 function App() {
 	return (
-		<div>
+		<div className='app'>
 			<Navigation />
 			<Routes>
 				<Route path='/home' element={<Home />} />
-				<Route path='/produse' element={<Produse />} />
-				<Route path='/produs' element={<Produs />} />
+				<Route path='/produse' element={<Products />} />
 				<Route path='/wishlist' element={<Wishlist />} />
-				<Route path='*' element={<h1>PAGE NOT FOUND</h1>} />
+				<Route
+					path='*'
+					element={
+						<Link to={"./home"}>
+							<button>GO TO HOMEPAGE</button>
+						</Link>
+					}
+				/>
 			</Routes>
-			{/* FOOTER nu merge ca si componenta comuna, am incercat */}
 			<Footer />
 		</div>
 	);

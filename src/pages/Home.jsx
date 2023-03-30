@@ -1,5 +1,21 @@
+import Carousel from "../components/Carousel";
+import CategoriesList from "../components/CategoriesList";
+import TrendingProducts from "../components/TrendingProducts";
+
 function Home() {
-	return <h1>Home</h1>;
+	return (
+		<>
+			<div>
+				<Carousel />
+			</div>
+			<div>
+				<CategoriesList />
+			</div>
+			<div>
+				<TrendingProducts />
+			</div>
+		</>
+	);
 }
 
 export default Home;

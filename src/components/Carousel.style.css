@@ -1,0 +1,16 @@
+.campaign_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    margin-top: 20px;
+    }
+
+
+
+    @media only screen and (max-width: 500px) {
+        .campaign_content h1{display: none;}
+        .campaign_content button {display: none;}
+    }
+      

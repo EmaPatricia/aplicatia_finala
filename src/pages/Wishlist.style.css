@@ -1,0 +1,23 @@
+.wishlist{
+    width: 100vw;
+    flex-direction: column;
+}
+
+.wishlist_pic{
+    height: 30vh;
+    width: 100%;
+    position: relative;
+}
+
+.wishlist h2{
+    position: absolute;
+    top: 20%;
+    left: 42vw;
+}
+
+.wishlist_prod{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}

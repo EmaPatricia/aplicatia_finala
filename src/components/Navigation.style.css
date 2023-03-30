@@ -1,16 +1,37 @@
 .navbar{
-    height: 6vh;
+    height: 10vh;
     width: 100vw;
-    background-color: aliceblue;
     display: flex;
+    position: relative;
     align-items: center;
+    justify-content: space-evenly;
+    
 }
 
 .navbar a{
     color: darkslategrey;
     font-size: 24px;
     text-decoration: none;
-    margin: 10px;
+    margin: 15px;
+    padding: 10px;
+}
 
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+    .logo{
+      position: absolute;
+      margin-top: -30px; 
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 50px;
+      left: 0;
+      right: 0;
+      width: 130px; 
+      }
+      .logo h1{
+        font-size: x-large;
+      }
+      .navbar{
+        height: 15vh;
+      }
 }
 
